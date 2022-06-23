@@ -41,5 +41,11 @@
             Padding="30 20">
             <iconPacks:PackIconFontAwesome Kind="SyncAltSolid" Height="20" Width="20"/>
         </Button>
+        <TextBlock
+            Text="Thank you"
+            VerticalAlignment="Bottom"
+            HorizontalAlignment="Center"
+            FontSize="24"
+            Margin="0 20"/>
     </Grid>
 </Window>
