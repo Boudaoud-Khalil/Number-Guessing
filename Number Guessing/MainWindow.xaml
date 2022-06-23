@@ -1,0 +1,45 @@
+﻿<Window x:Class="Number_Guessing.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Number_Guessing"
+        xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        mc:Ignorable="d"
+        Title="Game GUessing" Height="450" Width="800"
+        Background="DarkGray" ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBlock
+            Text=" click on Generate in order to get a random number "
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Margin="0 80"
+            FontSize="30"/>
+        <TextBlock
+            Background="LightGray"
+            x:Name="Generatbox"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Padding="0 30"
+            MinWidth="170"
+            TextAlignment="Center"
+            FontSize="24"/>
+        <Button
+            Click="generator"
+            Content="Generate"
+            VerticalAlignment="Bottom"
+            HorizontalAlignment="Center"
+            Margin="0 80"
+            Padding="10"
+            FontSize="20"/>
+        <Button
+            Click="again"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Right"
+            Margin="200 0"
+            Padding="30 20">
+            <iconPacks:PackIconFontAwesome Kind="SyncAltSolid" Height="20" Width="20"/>
+        </Button>
+    </Grid>
+</Window>
